@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start Dev Server",
+			"type": "shell",
+			"command": "python3 -m http.server 8080",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Start Ved Investments Dev Server",
+			"type": "shell",
+			"command": "pkill -f 'python3 -m http.server 8080' 2>/dev/null || true; sleep 1; python3 -m http.server 8080",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Start Ved Investments Website",
+			"type": "shell",
+			"command": "echo '🚀 Starting Ved Investments Development Server...' && python3 -m http.server 3000 && echo '✅ Server started at http://localhost:3000'",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Serve Ved Investments Website",
+			"type": "shell",
+			"command": "python3 -m http.server 5000",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Open Ved Investments Website",
+			"type": "shell",
+			"command": "echo 'Opening Ved Investments website in VS Code Simple Browser...' && code --command 'simpleBrowser.show' --args 'http://localhost:5000' || echo 'Website server should be running at http://localhost:5000'",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
