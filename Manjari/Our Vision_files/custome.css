@@ -1,0 +1,283 @@
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+.color-primary-style {
+	background-color: rgba(26, 182, 157, 0.07);
+}
+.color-secondary-style {
+	background-color: rgba(238, 74, 98, 0.07);
+}
+.color-third-style {
+	background-color: #eefbf5;
+}
+.color-four-style {
+	background-color: #fffaef;
+}
+.color-five-style {
+	background-color: #f7f3ff;
+}
+.color-six-style {
+	background-color: #f3f4fe;
+}
+.color-seven-style {
+	background-color: #fff7ef;
+}
+.color-aight-style {
+	background-color: #fff0f8;
+}
+/*=============================================*/
+.Autonomy-section{
+	background:#fff;
+	border-bottom:3px solid var(--color-secondary);
+	border-radius:10px;
+	padding:20px;
+	height:200px;
+}
+/*=============================================*/
+.women-makers{
+	width:100%;
+	position:relative;
+	padding:25px;
+	border-radius:5px;
+	height: 400px;
+	margin-top: 15px;
+}
+.women-makers h3{
+	font-size:14px;
+}
+.women-makers p{
+	margin-bottom:0px;
+	font-size:12px;
+}
+.women-makers .img-item{
+	width:100%;
+	position:relative;
+	margin-bottom:20px;
+}
+.women-makers .img-item img{
+	width:150px;
+	height:150px;
+	border-radius: 50%;
+}
+.women-makers .img-border-pink img:hover{
+	border: 5px solid #ccc3c3;
+	transition: 0.5s;
+}
+.women-makers .img-border-pink img{
+	border: 5px solid rgb(229 36 59 / 80%);
+}
+.women-makers .img-border-yellow img:hover{
+	border: 5px solid #ccc3c3;
+	transition: 0.5s;
+}
+.women-makers .img-border-yellow img{
+	border: 5px solid #f2a711;
+}
+.women-makers .img-border-dark img:hover{
+	border: 5px solid #ccc3c3;
+	transition: 0.5s;
+}
+.women-makers .img-border-dark img{
+	border: 5px solid rgb(241 53 29);
+}
+.women-makers .img-border-green img:hover{
+	border: 5px solid #ccc3c3;
+	transition: 0.5s;
+}
+.women-makers .img-border-green img{
+	border: 5px solid #81d742;
+}
+.women-makers .img-border-blue img:hover{
+	border: 5px solid #ccc3c3;
+	transition: 0.5s;
+}
+.women-makers .img-border-blue img{
+	border: 5px solid rgb(38 188 225);
+}
+
+/*-------------------
+Team Styles
+---------------------*/
+.edu-team-grid.team-style-2 {
+	padding: 0 30px 36px;
+	position: relative;
+	z-index: 1;
+}
+.edu-team-grid.team-style-2:after {
+	content: "";
+	height: 75%;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 12px 5px #f1f1f1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;}
+.edu-team-grid.team-style-2 .content .designation {
+	margin-bottom: 15px;
+}
+.edu-team-grid.team-style-2 .content p {
+	margin-bottom: 0;
+}
+
+/*=============================================*/
+.women-makers-2{
+	width:100%;
+	position:relative;
+	padding:25px;
+	border-radius:5px;
+	height:510px;
+	margin-top: 15px;
+}
+.women-makers-2 h3{
+	font-size:14px;
+}
+.women-makers-2 p{
+	margin-bottom:0px;
+	font-size:12px;
+}
+
+/*=============================================*/
+
+/*=============================================*/
+.Programme-sec h4{ 
+	font-size: 20px;
+	line-height: 28px;}
+
+
+.Programme-sec{
+	background: #fff;
+	border-bottom: 3px solid var(--color-secondary);
+	border-radius: 10px;
+	padding: 40px;
+	height: 280px;
+}
+.border-rd{
+	border-radius: 10px;
+}
+.Women-box{
+	text-align: center;
+	padding: 20px;
+	color: #fff;
+}
+/*=============================================*/
+
+/*=============================================*/
+.Violence{
+	width: 100%;
+	position: relative;
+}
+.Violence-box{
+	background-color: #fff;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+	top: -70px;
+	width: 90% !important;
+	left: 20px;
+	border-radius: 10px;
+	min-height: 328px;
+}
+.Violence .Violence-img{
+	overflow: hidden;
+	width: 100%;
+	height: 250px;
+	border-radius: 10px;
+}
+.Violence .Violence-img:hover img{
+	-webkit-transform: scale(1.08);
+	transform: scale(1.08);
+}
+.Violence-img img{
+	-webkit-transition: 0.4s ease;
+	transition: 0.4s ease;
+	border-radius: 10px;
+	height: 250px;
+	width: 100%;
+	object-fit: cover;
+}
+.Violence .Violence-title{
+	font-family: var(--font-secondary);
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+/*=============================================*/
+
+.Initiative-box{
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	height: 330px;
+}
+/*=============================================*/
+.team {
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+}
+.team ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+.team ul li {
+	display: inline-block;
+	margin: 0px 2px;
+	border-radius: 5px;
+}
+
+.team ul li a{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	-webkit-transition: border-top-left-radius .1s linear 0s,border-top-right-radius .1s linear .1s,border-bottom-right-radius .1s linear .2s,border-bottom-left-radius .1s linear .3s;
+	-o-transition: border-top-left-radius .1s linear 0s,border-top-right-radius .1s linear .1s,border-bottom-right-radius .1s linear .2s,border-bottom-left-radius .1s linear .3s;
+	transition: border-top-left-radius .1s linear 0s,border-top-right-radius .1s linear .1s,border-bottom-right-radius .1s linear .2s,border-bottom-left-radius .1s linear .3s;
+	color:#fff;
+}
+
+/*=============================================*/
+.tab-box-1{
+    position: absolute;
+    top: -60px;
+    left: 29%;
+}
+
+.tab-box{
+    position: absolute;
+    top: -110px;
+    left: 29%;
+}
+
+.tab-button{
+	background-color: #008541;
+	padding: 15px 15px;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 5px;
+	margin-top: 25px;
+}
+
+/*=============================================*/
+
+.powered-by a:hover {
+    color: #212529;
+}
+.powered-by, .powered-by a {
+    color:#ccc;
+}

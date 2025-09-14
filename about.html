@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Ved Investments</title>
-    <meta name="description" content="Learn about Ved Investments - Your trusted partner in financial growth and investment success with expert financial advisory services.">
+    <meta name="description" content="Learn about Ved Investments - Your trusted partner in financial growth and investment solutions.">
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -15,22 +15,22 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="loaded">
     <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-brand">
-                    <a href="index.html">
-                        <img src="assets/images/ved_investments_logo.png" alt="Ved Investments Logo" class="logo">
-                    </a>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="assets/images/ved_investments_logo.png" alt="Ved Investments Logo" class="logo-img">
                 </div>
                 
-                <div class="nav-menu" id="navMenu">
-                    <ul class="nav-list">
+                <!-- Navigation -->
+                <nav class="nav" id="nav">
+                    <ul class="nav-menu" id="nav-menu">
                         <li class="nav-item">
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
@@ -38,14 +38,17 @@
                             <a href="about.html" class="nav-link active">About us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="tools.html" class="nav-link">Tools <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="#lumpsum-calculator">Lumpsum Calculator</a>
-                                <a href="#sip-calculator">SIP Calculator</a>
-                            </div>
+                            <a href="tools.html" class="nav-link">Tools <i class="fas fa-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#lumpsum-calculator" class="dropdown-link">Lumpsum Calculator</a></li>
+                                <li><a href="#sip-calculator" class="dropdown-link">SIP Calculator</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="downloads.html" class="nav-link">Downloads</a>
+                            <a href="stories.html" class="nav-link">Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sakhi.html" class="nav-link">Sakhi</a>
                         </li>
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link">Contact us</a>
@@ -54,30 +57,36 @@
                             <a href="join.html" class="nav-link">Join Us</a>
                         </li>
                     </ul>
-                </div>
-                
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Page Header -->
-        <section class="page-header">
+        <!-- Hero Section -->
+        <section id="about" class="hero">
             <div class="container">
-                <div class="page-header-content">
-                    <h1 class="page-title">About Ved Investments</h1>
-                    <p class="page-subtitle">Your trusted partner in financial growth and investment success</p>
-                    <nav class="breadcrumb">
-                        <a href="index.html">Home</a>
-                        <span>/</span>
-                        <span class="current">About Us</span>
-                    </nav>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title animate-fade-in">
+                            <span class="hero-title-line">About</span>
+                            <span class="hero-title-line">Ved Investments</span>
+                        </h1>
+                        <p class="hero-subtitle animate-fade-in-delay">Your trusted partner in financial growth</p>
+                        <a href="#contact" class="btn btn-primary hero-btn animate-fade-in-delay-2">
+                            <span>Learn More</span>
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/images/money-tree-bg.png" alt="About Ved Investments" class="hero-img">
+                    </div>
                 </div>
             </div>
         </section>
@@ -86,116 +95,118 @@
         <section class="about-page">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="about-content">
                             <h2 class="section-title">Who We Are</h2>
-                            <p class="about-text">
-                                Welcome to Ved Investments, your trusted partner in financial growth and investment success. 
-                                With years of expertise in wealth management, we guide individuals and families toward 
-                                achieving their financial goals through strategic investment planning.
+                            <p class="section-description">
+                                Ved Investments is a leading financial advisory firm dedicated to helping individuals and families 
+                                achieve their financial goals through strategic investment planning and wealth management.
                             </p>
-                            <p class="about-text">
-                                Our team of certified financial advisors provides personalized solutions tailored to your 
-                                unique financial situation. From mutual funds to systematic investment plans (SIP), we 
-                                offer comprehensive investment guidance to help you build lasting wealth.
+                            <p>
+                                With years of experience in the financial industry, our team of certified financial advisors 
+                                provides personalized investment solutions tailored to your unique needs and risk tolerance.
                             </p>
                             
-                            <h3 class="section-subtitle">Our Mission</h3>
-                            <p class="about-text">
-                                To democratize wealth creation by providing accessible, expert financial guidance that 
-                                empowers every individual to achieve their financial dreams and secure their future.
-                            </p>
-
-                            <h3 class="section-subtitle">Our Vision</h3>
-                            <p class="about-text">
-                                To become India's most trusted wealth management platform, known for transparency, 
-                                innovation, and client-centric approach in financial advisory services.
-                            </p>
+                            <div class="about-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <div class="feature-content">
+                                        <h4>Trusted Expertise</h4>
+                                        <p>Certified financial advisors with proven track record</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <div class="feature-content">
+                                        <h4>Growth Focused</h4>
+                                        <p>Strategic investment planning for long-term wealth creation</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-handshake"></i>
+                                    <div class="feature-content">
+                                        <h4>Personal Service</h4>
+                                        <p>Tailored solutions based on your individual goals</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="about-image">
-                            <img src="assets/images/money-tree-bg.png" alt="About Ved Investments" class="img-fluid">
+                    
+                    <div class="col-lg-6">
+                        <div class="about-stats">
+                            <h3>Our Achievements</h3>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <h4 class="stat-number">500+</h4>
+                                    <p class="stat-label">Happy Clients</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4 class="stat-number">₹50Cr+</h4>
+                                    <p class="stat-label">Assets Under Management</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4 class="stat-number">15+</h4>
+                                    <p class="stat-label">Years Experience</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4 class="stat-number">98%</h4>
+                                    <p class="stat-label">Client Satisfaction</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-mission">
+                            <h3>Our Mission</h3>
+                            <p>
+                                To democratize financial planning and make wealth creation accessible to every individual 
+                                through transparent, ethical, and result-oriented investment advisory services.
+                            </p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Features Section -->
-                <div class="about-features-section">
-                    <h2 class="section-title text-center">Why Choose Ved Investments?</h2>
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <h3>Expert Financial Advisory</h3>
-                            <p>Certified financial advisors with deep market knowledge and experience</p>
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Meet Our Team</h2>
+                    <p class="section-subtitle">Experienced professionals dedicated to your financial success</p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="assets/images/money-tree-bg.png" alt="Team Member">
                         </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h3>Personalized Investment Plans</h3>
-                            <p>Tailored investment strategies based on your risk profile and financial goals</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <h3>Risk Assessment & Management</h3>
-                            <p>Comprehensive risk analysis to protect and grow your investments</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-piggy-bank"></i>
-                            </div>
-                            <h3>Long-term Wealth Building</h3>
-                            <p>Focus on sustainable wealth creation through disciplined investment approach</p>
+                        <div class="member-info">
+                            <h4>Vedika Sharma</h4>
+                            <p class="member-role">Founder & CEO</p>
+                            <p class="member-description">15+ years in financial planning and investment advisory</p>
                         </div>
                     </div>
-                </div>
-
-                <!-- Team Section -->
-                <div class="team-section">
-                    <h2 class="section-title text-center">Our Leadership Team</h2>
-                    <div class="team-grid">
-                        <div class="team-member">
-                            <div class="member-photo">
-                                <img src="assets/images/money-tree-bg.png" alt="Team Member" class="img-fluid">
-                            </div>
-                            <h3>Financial Expert</h3>
-                            <p class="member-role">Chief Investment Officer</p>
-                            <p class="member-description">15+ years experience in wealth management and investment planning</p>
+                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="assets/images/money-tree-bg.png" alt="Team Member">
                         </div>
-                        <div class="team-member">
-                            <div class="member-photo">
-                                <img src="assets/images/money-tree-bg.png" alt="Team Member" class="img-fluid">
-                            </div>
-                            <h3>Advisory Specialist</h3>
+                        <div class="member-info">
+                            <h4>Rajesh Kumar</h4>
                             <p class="member-role">Senior Financial Advisor</p>
-                            <p class="member-description">Specializes in mutual funds and systematic investment planning</p>
+                            <p class="member-description">Certified Financial Planner with expertise in mutual funds</p>
                         </div>
                     </div>
-                </div>
-
-                <!-- Stats Section -->
-                <div class="about-stats">
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-number">3000+</div>
-                            <div class="stat-label">Satisfied Clients</div>
+                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="assets/images/money-tree-bg.png" alt="Team Member">
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">₹500Cr+</div>
-                            <div class="stat-label">Assets Under Management</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">10+</div>
-                            <div class="stat-label">Years of Experience</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Financial Products</div>
+                        <div class="member-info">
+                            <h4>Priya Patel</h4>
+                            <p class="member-role">Investment Specialist</p>
+                            <p class="member-description">Expert in portfolio management and risk assessment</p>
                         </div>
                     </div>
                 </div>
@@ -207,21 +218,81 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <a href="disclaimer.html">Disclaimer</a>
-                <span>-</span>
-                <a href="privacy.html">Privacy Policy</a>
-                <span>-</span>
-                <a href="terms.html">Terms & Conditions</a>
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/ved_investments_logo.png" alt="Ved Investments Logo" class="footer-logo-img">
+                        <p class="footer-description">Your trusted partner in financial growth and investment solutions.</p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="stories.html">Stories</a></li>
+                        <li><a href="sakhi.html">Sakhi</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#mutual-funds">Mutual Funds</a></li>
+                        <li><a href="#sip-planning">SIP Planning</a></li>
+                        <li><a href="#insurance">Insurance</a></li>
+                        <li><a href="#tax-planning">Tax Planning</a></li>
+                        <li><a href="#retirement-planning">Retirement Planning</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Get in Touch</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@vedinvestments.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pune, Maharashtra, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2024 Ved Investments. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#disclaimer">Disclaimer</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Chat Widget -->
-    <div class="whatsapp-chat" id="whatsappChat">
-        <a href="https://wa.me/919981349475" target="_blank" class="whatsapp-btn">
+    <!-- WhatsApp Widget -->
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/919876543210?text=Hi%20Ved%20Investments,%20I%20would%20like%20to%20know%20more%20about%20your%20investment%20services" 
+           target="_blank" 
+           class="whatsapp-btn">
             <i class="fab fa-whatsapp"></i>
         </a>
-        <div class="chat-tooltip">Chat with us on WhatsApp</div>
     </div>
 
     <!-- JavaScript -->

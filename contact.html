@@ -20,17 +20,17 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-brand">
-                    <a href="index.html">
-                        <img src="assets/images/ved_investments_logo.png" alt="Ved Investments Logo" class="logo">
-                    </a>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="assets/images/ved_investments_logo.png" alt="Ved Investments Logo" class="logo-img">
                 </div>
                 
-                <div class="nav-menu" id="navMenu">
-                    <ul class="nav-list">
+                <!-- Navigation -->
+                <nav class="nav" id="nav">
+                    <ul class="nav-menu" id="nav-menu">
                         <li class="nav-item">
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
@@ -38,14 +38,17 @@
                             <a href="about.html" class="nav-link">About us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="tools.html" class="nav-link">Tools <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="#lumpsum-calculator">Lumpsum Calculator</a>
-                                <a href="#sip-calculator">SIP Calculator</a>
-                            </div>
+                            <a href="tools.html" class="nav-link">Tools <i class="fas fa-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#lumpsum-calculator" class="dropdown-link">Lumpsum Calculator</a></li>
+                                <li><a href="#sip-calculator" class="dropdown-link">SIP Calculator</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="downloads.html" class="nav-link">Downloads</a>
+                            <a href="stories.html" class="nav-link">Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sakhi.html" class="nav-link">Sakhi</a>
                         </li>
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link active">Contact us</a>
@@ -54,30 +57,36 @@
                             <a href="join.html" class="nav-link">Join Us</a>
                         </li>
                     </ul>
-                </div>
-                
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Page Header -->
-        <section class="page-header">
+        <!-- Hero Section -->
+        <section id="contact" class="hero">
             <div class="container">
-                <div class="page-header-content">
-                    <h1 class="page-title">Contact Us</h1>
-                    <p class="page-subtitle">Get in touch with our financial experts</p>
-                    <nav class="breadcrumb">
-                        <a href="index.html">Home</a>
-                        <span>/</span>
-                        <span class="current">Contact Us</span>
-                    </nav>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title animate-fade-in">
+                            <span class="hero-title-line">Contact</span>
+                            <span class="hero-title-line">Our Experts</span>
+                        </h1>
+                        <p class="hero-subtitle animate-fade-in-delay">Start your investment journey today</p>
+                        <a href="#contact-form" class="btn btn-primary hero-btn animate-fade-in-delay-2">
+                            <span>Get Started</span>
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/images/money-tree-bg.png" alt="Contact Ved Investments" class="hero-img">
+                    </div>
                 </div>
             </div>
         </section>
@@ -100,7 +109,7 @@
                                 </div>
                                 <div class="contact-details">
                                     <h4>Phone</h4>
-                                    <p>+91 99813 49475</p>
+                                    <p>+91 9552054719</p>
                                 </div>
                             </div>
                             
@@ -120,7 +129,7 @@
                                 </div>
                                 <div class="contact-details">
                                     <h4>WhatsApp</h4>
-                                    <p>+91 99813 49475</p>
+                                    <p>+91 9552054719</p>
                                 </div>
                             </div>
                         </div>
@@ -164,12 +173,43 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <a href="disclaimer.html">Disclaimer</a>
-                <span>-</span>
-                <a href="privacy.html">Privacy Policy</a>
-                <span>-</span>
-                <a href="terms.html">Terms & Conditions</a>
+            <div class="footer-main">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="assets/images/ved_investments_logo.png" alt="Ved Investments Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description">Your trusted partner for investment guidance and wealth management solutions.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> info@vedinvestments.com</p>
+                        <p><i class="fas fa-phone"></i> +91 9552054719</p>
+                    </div>
+                </div>
+                
+                <div class="footer-right">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="stories.html">Stories</a></li>
+                            <li><a href="sakhi.html">Sakhi</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="#disclaimer">Disclaimer</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ved Investments. All rights reserved.</p>
             </div>
         </div>
     </footer>
