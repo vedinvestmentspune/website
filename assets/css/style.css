@@ -2592,8 +2592,21 @@ section {
     color: var(--primary-color);
 }
 
+.simple-contact-linkedin {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.simple-contact-linkedin i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
 .simple-contact-email a,
-.simple-contact-phone a {
+.simple-contact-phone a,
+.simple-contact-linkedin a {
     color: #333;
     text-decoration: none;
     font-size: 1rem;
@@ -2601,7 +2614,8 @@ section {
 }
 
 .simple-contact-email a:hover,
-.simple-contact-phone a:hover {
+.simple-contact-phone a:hover,
+.simple-contact-linkedin a:hover {
     color: var(--primary-color);
 }
 
@@ -2611,6 +2625,34 @@ section {
     margin-top: 1rem;
 }
 
+.simple-social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.simple-social-link:hover {
+    background: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(201, 166, 135, 0.4);
+}
+
+.simple-social-link i.simple-social-icon {
+    font-size: 1.2rem;
+}
+
+.simple-social-link span {
+    font-weight: 500;
+}
+
+/* Legacy icon-only style (if needed) */
 .simple-social-icon {
     width: 40px;
     height: 40px;
