@@ -288,6 +288,8 @@ section {
 
 .hero-image {
     text-align: center;
+    overflow: hidden;
+    padding-left: 5px; /* Push content right to hide left edge */
 }
 
 .hero-img {
@@ -298,8 +300,9 @@ section {
 .hero-logo {
     max-width: 100%;
     height: auto;
-    margin-left: -2px; /* Hide black line on left edge of logo */
-    clip-path: inset(0 0 0 2px); /* Crop the left edge */
+    position: relative;
+    left: 3px; /* Shift right to hide black line */
+    object-fit: cover;
 }
 
 @keyframes float {
