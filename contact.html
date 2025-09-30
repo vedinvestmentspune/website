@@ -69,101 +69,61 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section id="contact" class="hero">
+        <!-- Simple Contact Section -->
+        <section class="simple-contact-section">
             <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title animate-fade-in">
-                            <span class="hero-title-line">Contact</span>
-                            <span class="hero-title-line">Our Experts</span>
-                        </h1>
-                        <p class="hero-subtitle animate-fade-in-delay">Start your investment journey today</p>
-                        <a href="#contact-form" class="btn btn-primary hero-btn animate-fade-in-delay-2">
-                            <span>Get Started</span>
-                            <i class="fas fa-angle-right"></i>
-                        </a>
-                    </div>
-                    <div class="hero-image">
-                        <img src="assets/images/money-tree-bg.png" alt="Contact Ved Investments" class="hero-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Content -->
-        <section class="contact-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="section-title">Get In Touch</h2>
-                        <p class="section-text">
-                            Ready to start your investment journey? Our team at Ved Investments of expert financial advisors 
-                            is here to help you achieve your financial goals.
+                <div class="simple-contact-wrapper">
+                    <!-- Left Side - Contact Info -->
+                    <div class="simple-contact-left">
+                        <h1 class="simple-contact-title">Get in Touch</h1>
+                        <p class="simple-contact-subtitle">I'd like to hear from you!</p>
+                        <p class="simple-contact-description">
+                            If you have any inquiries or just want to say hi, please use the contact form!
                         </p>
                         
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4>Phone</h4>
-                                    <p>+91 9552054719</p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4>Email</h4>
-                                    <p>info@ved-investments.in</p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fab fa-whatsapp"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4>WhatsApp</h4>
-                                    <p>+91 9552054719</p>
-                                </div>
-                            </div>
+                        <div class="simple-contact-email">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@ved-investments.in">info@ved-investments.in</a>
+                        </div>
+                        
+                        <div class="simple-contact-phone">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919552054719">+91 9552054719</a>
+                        </div>
+                        
+                        <div class="simple-social-links">
+                            <a href="#" class="simple-social-icon" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
                         </div>
                     </div>
                     
-                    <div class="col-md-6">
-                        <div class="contact-form">
-                            <h3>Send us a Message</h3>
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" name="name" placeholder="Your Name" required>
+                    <!-- Right Side - Contact Form -->
+                    <div class="simple-contact-right">
+                        <form class="simple-contact-form">
+                            <div class="simple-form-row">
+                                <div class="simple-form-group">
+                                    <label>First Name</label>
+                                    <input type="text" name="firstName" required>
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" placeholder="Your Email" required>
+                                <div class="simple-form-group">
+                                    <label>Last Name</label>
+                                    <input type="text" name="lastName" required>
                                 </div>
-                                <div class="form-group">
-                                    <input type="tel" name="phone" placeholder="Your Phone Number" required>
-                                </div>
-                                <div class="form-group">
-                                    <select name="subject" required>
-                                        <option value="">Select Investment Interest</option>
-                                        <option value="mutual-funds">Mutual Funds</option>
-                                        <option value="sip">SIP Planning</option>
-                                        <option value="portfolio">Portfolio Review</option>
-                                        <option value="financial-planning">Financial Planning</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
-                        </div>
+                            </div>
+                            
+                            <div class="simple-form-group">
+                                <label>Email *</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            
+                            <div class="simple-form-group">
+                                <label>Message</label>
+                                <textarea name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="simple-submit-btn">Send</button>
+                        </form>
                     </div>
                 </div>
             </div>
