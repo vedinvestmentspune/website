@@ -168,6 +168,15 @@ section {
     width: auto;
 }
 
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-family: var(--font-secondary);
+    margin-bottom: 0 !important;
+    line-height: 1;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
