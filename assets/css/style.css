@@ -359,6 +359,35 @@ section {
     margin-bottom: 0.25rem;
 }
 
+/* Sakhi Mission Section */
+.sakhi-mission {
+    margin-top: 2rem;
+}
+
+.sakhi-mission .hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Sakhi Page Title Styling */
+.sakhi-main-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.sakhi-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    font-family: var(--font-secondary);
+    font-style: italic;
+    margin-top: 0;
+}
+
 .about-mission {
     font-size: 1.05rem;
     line-height: 1.8;
@@ -445,6 +474,14 @@ section {
     
     .about-mission {
         font-size: 1rem;
+    }
+    
+    .sakhi-main-title {
+        font-size: 2.5rem;
+    }
+    
+    .sakhi-subtitle {
+        font-size: 1.2rem;
     }
     
     .hero-logo {
