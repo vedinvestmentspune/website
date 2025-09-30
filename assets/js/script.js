@@ -180,29 +180,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollAnimations();
     
     // =============================================
-    // WHATSAPP CHAT WIDGET INTERACTIONS
-    // =============================================
-    const whatsappChat = document.getElementById('whatsapp-chat');
-    if (whatsappChat) {
-        // Show tooltip on page load after a delay
-        setTimeout(() => {
-            const tooltip = whatsappChat.querySelector('.whatsapp-tooltip');
-            if (tooltip) {
-                tooltip.style.opacity = '1';
-                tooltip.style.visibility = 'visible';
-                tooltip.style.transform = 'translateX(0)';
-                
-                // Hide tooltip after 3 seconds
-                setTimeout(() => {
-                    tooltip.style.opacity = '0';
-                    tooltip.style.visibility = 'hidden';
-                    tooltip.style.transform = 'translateX(10px)';
-                }, 3000);
-            }
-        }, 2000);
-    }
-    
-    // =============================================
     // FORM VALIDATION (for future contact forms)
     // =============================================
     function validateEmail(email) {

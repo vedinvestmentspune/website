@@ -1432,77 +1432,6 @@ section {
 }
 
 /* =============================================
-   WHATSAPP CHAT WIDGET
-   ============================================= */
-
-.whatsapp-chat {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.whatsapp-tooltip {
-    background-color: var(--secondary-color);
-    color: var(--text-light);
-    padding: 8px 16px;
-    border-radius: 10px;
-    font-size: 14px;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(10px);
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.whatsapp-tooltip::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -8px;
-    transform: translateY(-50%);
-    border: 8px solid transparent;
-    border-left-color: var(--secondary-color);
-}
-
-.whatsapp-btn {
-    width: 60px;
-    height: 60px;
-    background-color: var(--secondary-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-light);
-    font-size: 2rem;
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-    transition: all 0.3s ease;
-    animation: pulse 2s infinite;
-}
-
-.whatsapp-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
-}
-
-.whatsapp-btn:hover ~ .whatsapp-tooltip,
-.whatsapp-chat:hover .whatsapp-tooltip {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
-}
-
-@keyframes pulse {
-    0% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
-    50% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.6), 0 0 0 15px rgba(37, 211, 102, 0.1); }
-    100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
-}
-
-/* =============================================
    ANIMATIONS
    ============================================= */
 
@@ -1640,16 +1569,6 @@ section {
     
     .counter-suffix {
         font-size: 2rem;
-    }
-    
-    .whatsapp-tooltip {
-        display: none;
-    }
-    
-    .whatsapp-btn {
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
     }
     
     .footer-main {
