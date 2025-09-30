@@ -286,9 +286,59 @@ section {
     animation: float 3s ease-in-out infinite;
 }
 
+.hero-logo {
+    max-width: 100%;
+    height: auto;
+}
+
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
+}
+
+/* About Intro Section */
+.about-intro {
+    margin-top: 2rem;
+}
+
+.about-intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: rgba(29, 48, 123, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+    background: rgba(29, 48, 123, 0.1);
+    transform: translateX(5px);
+}
+
+.highlight-item i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.highlight-item span {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    font-weight: 500;
 }
 
 /* =============================================
@@ -353,6 +403,20 @@ section {
     
     .feature-item {
         font-size: 15px;
+    }
+    
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-intro p {
+        font-size: 1rem;
+    }
+    
+    .hero-logo {
+        max-width: 80%;
+        margin: 2rem auto 0;
+        display: block;
     }
 }
 
@@ -527,6 +591,104 @@ section {
 .member-description {
     color: var(--text-color);
     line-height: 1.6;
+}
+
+/* Team List - Horizontal Cards */
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.team-card {
+    display: flex;
+    gap: 2.5rem;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    transform: translateY(-5px);
+}
+
+.team-card-image {
+    flex-shrink: 0;
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.team-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card-content {
+    flex: 1;
+    padding: 2rem 2rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-card-content h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.team-card-role {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.team-card-description {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.team-card-description:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design for Team Cards */
+@media (max-width: 768px) {
+    .team-card {
+        flex-direction: column;
+    }
+    
+    .team-card-image {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .team-card-content {
+        padding: 1.5rem;
+    }
+    
+    .team-card-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .team-card-role {
+        font-size: 1rem;
+    }
+    
+    .team-card-description {
+        font-size: 0.95rem;
+    }
 }
 
 .about-stats {
