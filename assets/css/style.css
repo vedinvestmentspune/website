@@ -794,10 +794,52 @@ section {
 
 .vision-section {
     background: linear-gradient(135deg, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
-    padding: 50px 0;
+    padding: 80px 0;
     color: white;
 }
 
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.mission-card,
+.vision-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.mission-card .section-title,
+.vision-card .section-title {
+    color: #FFD700 !important;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.mission-text,
+.vision-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: white;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Old vision styles - keep for compatibility */
 .vision-section .vision-title {
     color: white !important;
     text-align: left !important;
@@ -921,6 +963,22 @@ section {
 
 /* Mobile Responsiveness for Vision Section */
 @media (max-width: 768px) {
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .mission-card,
+    .vision-card {
+        padding: 30px 20px;
+    }
+    
+    .mission-text,
+    .vision-text {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
     .vision-cards {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -2075,6 +2133,7 @@ section {
     margin-top: 3rem;
 }
 
+/* Old vision card style - commented out to avoid conflict
 .vision-card {
     background: #fff;
     padding: 2.5rem;
@@ -2082,6 +2141,7 @@ section {
     box-shadow: var(--shadow);
     border-left: 4px solid var(--primary-color);
 }
+*/
 
 .vision-header h3 {
     color: var(--primary-color);
