@@ -309,17 +309,17 @@ section {
 }
 
 .about-highlights {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .highlight-item {
     display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
     background: rgba(29, 48, 123, 0.05);
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -332,13 +332,34 @@ section {
 
 .highlight-item i {
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
 }
 
-.highlight-item span {
-    font-size: 0.95rem;
+.highlight-content {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.highlight-content strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.about-mission {
+    font-size: 1.05rem;
+    line-height: 1.8;
     color: var(--text-primary);
     font-weight: 500;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(37, 211, 102, 0.05);
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 4px;
 }
 
 /* =============================================
@@ -405,11 +426,15 @@ section {
         font-size: 15px;
     }
     
-    .about-highlights {
-        grid-template-columns: 1fr;
+    .about-intro p {
+        font-size: 1rem;
     }
     
-    .about-intro p {
+    .highlight-content {
+        font-size: 0.95rem;
+    }
+    
+    .about-mission {
         font-size: 1rem;
     }
     
@@ -1229,6 +1254,7 @@ section {
     margin-bottom: 1.5rem;
     opacity: 0.9;
     max-width: 300px;
+    color: #ffffff !important;
 }
 
 .footer-contact {
@@ -1240,11 +1266,13 @@ section {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    color: #ffffff !important;
 }
 
 .footer-contact i {
     width: 16px;
     font-size: 0.8rem;
+    color: var(--secondary-color);
 }
 
 .footer-right {
